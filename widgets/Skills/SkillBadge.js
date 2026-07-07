@@ -21,7 +21,8 @@ export default function SkillBadge({
                 {Icon && (
                     <div className="skill-icon">
                         {/* <Icon /> */}
-                        <Image src={Icon} height="auto" width="auto" />
+                        {/* <Image src={Icon} height="auto" width="auto" /> */}
+                        <img src={Icon} className="bg-center object-cover" />
                     </div>
                 )}
 
