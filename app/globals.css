@@ -8,6 +8,11 @@
   src: url("/fonts/Lato/Lato-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/fonts/Lato/Lato-Bold.ttf");
+}
+
 :root {
   --background: #030014;
   --foreground: #171717;
@@ -32,4 +37,6 @@ body {
   color: var(--foreground);
   font-family: Lato;
 }
+
+
 

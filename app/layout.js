@@ -1,10 +1,11 @@
-"use client"
+// "use client"
 
-import React, { useState } from "react"
+// import React, { useState } from "react"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Preloader from "@/widgets/LandingPage/Preloader";
+// import Preloader from "@/widgets/LandingPage/Preloader";
 import Navbar from "@/components/Navbar/Navbar";
+import ScrollHandler from "@/components/ScrollHandler/ScrollHandler.";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,24 +23,21 @@ const geistMono = Geist_Mono({
 // };
 
 export default function RootLayout({ children }) {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   return (
     <html
       lang="en"
       className={`${geistSans.variable} {!loading && ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {loading && (
-          <Preloader
-            onFinish={() => setLoading(false)}
-          />
-        )}
-        {!loading &&
-          <section className="bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-[#1a153a] via-[#08051e] to-[#030014]">
-            <Navbar />
-            {children}
-          </section>
-        }
+
+        {/* <ScrollHandler /> */}
+        {/* {!loading && */}
+        <section className="bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-[#1a153a] via-[#08051e] to-[#030014]">
+          <Navbar />
+          {children}
+        </section>
+        {/* } */}
       </body>
     </html>
   );
