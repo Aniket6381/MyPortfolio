@@ -229,7 +229,7 @@ export default function Skills() {
                 {/* Categories */}
 
                 <div className="skills-layout">
-                    {skillCategories.map((category, index) => (
+                    {skillCategories?.map((category, index) => (
                         <SkillCategory
                             key={category.title}
                             title={category.title}

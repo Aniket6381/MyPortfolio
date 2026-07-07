@@ -1,11 +1,12 @@
 // "use client"
-
+import "devicon/devicon.min.css";
 // import React, { useState } from "react"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // import Preloader from "@/widgets/LandingPage/Preloader";
 import Navbar from "@/components/Navbar/Navbar";
 import ScrollHandler from "@/components/ScrollHandler/ScrollHandler.";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

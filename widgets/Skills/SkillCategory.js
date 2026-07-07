@@ -80,14 +80,14 @@ export default function SkillCategory({
 
                 <div className="category-grid">
 
-                    {skills.map((skill) => (
+                    {/* {skills.map((skill) => (
                         <SkillBadge
                             key={skill.name}
                             name={skill.name}
                             icon={skill.icon}
                             color={color}
                         />
-                    ))}
+                    ))} */}
 
                 </div>
 
