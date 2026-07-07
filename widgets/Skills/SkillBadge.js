@@ -6,7 +6,7 @@ export default function SkillBadge({
     icon,
     color = "#22d3ee",
 }) {
-    console.log(icon)
+    console.log(icon);
     return (
         <div
             className="skill-badge"
