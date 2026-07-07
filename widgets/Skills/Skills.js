@@ -180,8 +180,8 @@
 
 import { motion } from "framer-motion";
 import Marquee from "./Marquee";
-// import SkillCategory from "./SkillCategory";
-// import { skillCategories } from "./SkillsData";
+import SkillCategory from "./SkillCategory";
+import { skillCategories } from "./SkillsData";
 import "./skills.css";
 
 export default function Skills() {
