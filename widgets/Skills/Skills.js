@@ -228,7 +228,7 @@ export default function Skills() {
 
                 {/* Categories */}
 
-                {/* <div className="skills-layout">
+                <div className="skills-layout">
                     {skillCategories.map((category, index) => (
                         <SkillCategory
                             key={category.title}
@@ -239,7 +239,7 @@ export default function Skills() {
                             index={index}
                         />
                     ))}
-                </div> */}
+                </div>
             </div>
         </section>
     );
