@@ -415,37 +415,37 @@ export const skillCategories = [
         skills: [
             {
                 name: "React.js",
-                icon: "react-original.svg",
+                icon: "react-original",
             },
 
             {
                 name: "Next.js",
-                icon: "nextjs-original.svg",
+                icon: "nextjs-original",
             },
 
             {
                 name: "Redux Toolkit",
-                icon: "redux-original.svg",
+                icon: "redux-original",
             },
 
             {
                 name: "Tailwind CSS",
-                icon: "tailwindcss-original.svg",
+                icon: "tailwindcss-original",
             },
 
             {
                 name: "Framer Motion",
-                icon: "framermotion-original.svg",
+                icon: "framermotion-original",
             },
 
             {
                 name: "Material UI",
-                icon: "materialui-original.svg",
+                icon: "materialui-original",
             },
 
             {
                 name: "Bootstrap",
-                icon: "bootstrap-original.svg",
+                icon: "bootstrap-original",
             },
         ],
     },
@@ -461,12 +461,12 @@ export const skillCategories = [
         skills: [
             {
                 name: "Node.js",
-                icon: "nodejs-original.svg",
+                icon: "nodejs-original",
             },
 
             {
                 name: "Express.js",
-                icon: "express-original.svg",
+                icon: "express-original",
             },
 
             {
@@ -502,7 +502,7 @@ export const skillCategories = [
         skills: [
             {
                 name: "MongoDB",
-                icon: "mongodb-original.svg",
+                icon: "mongodb-original",
             },
 
             {
@@ -522,12 +522,12 @@ export const skillCategories = [
         skills: [
             {
                 name: "Git",
-                icon: "git-original.svg",
+                icon: "git-original",
             },
 
             {
                 name: "GitHub",
-                icon: "github-original.svg",
+                icon: "github-original",
             },
         ],
     },
@@ -547,42 +547,42 @@ export const skillCategories = [
 
             {
                 name: "Postman",
-                icon: "postman-original.svg",
+                icon: "postman-original",
             },
 
             {
                 name: "Docker",
-                icon: "docker-original.svg",
+                icon: "docker-original",
             },
 
             {
                 name: "AWS S3",
-                icon: "amazonwebservices-original-wordmark.svg",
+                icon: "amazonwebservices-original-wordmark",
             },
 
             {
                 name: "Webpack",
-                icon: "webpack-original.svg",
+                icon: "webpack-original",
             },
 
             {
                 name: "Vite",
-                icon: "vitejs-original.svg",
+                icon: "vitejs-original",
             },
 
             {
                 name: "PNPM",
-                icon: "pnpm-original-wordmark.svg",
+                icon: "pnpm-original-wordmark",
             },
 
             {
                 name: "NPM",
-                icon: "npm-original.svg",
+                icon: "npm-original",
             },
 
             {
                 name: "Figma",
-                icon: "figma-original.svg",
+                icon: "figma-original",
             },
         ],
     },
