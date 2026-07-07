@@ -3,9 +3,10 @@ import "./skills.css";
 
 export default function SkillBadge({
     name,
-    icon: Icon,
+    icon,
     color = "#22d3ee",
 }) {
+    console.log(icon)
     return (
         <div
             className="skill-badge"
@@ -18,11 +19,11 @@ export default function SkillBadge({
 
             {/* Content */}
             <div className="skill-badge-content">
-                {Icon && (
+                {icon && (
                     <div className="skill-icon">
                         {/* <Icon /> */}
                         <Image
-                            src={`/icons/${Icon}.svg`}
+                            src={`/icons/${icon}.svg`}
                             alt={name}
                             width={32}
                             height={32}
