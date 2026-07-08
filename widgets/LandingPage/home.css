@@ -1,3 +1,69 @@
+/* Background */
+
+.home-background{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+}
+
+.home-gradient{
+
+position:absolute;
+
+width:450px;
+
+height:450px;
+
+border-radius:50%;
+
+filter:blur(140px);
+
+opacity:.12;
+
+}
+
+.gradient-left{
+
+background:#22d3ee;
+
+left:-150px;
+
+top:0;
+
+}
+
+.gradient-right{
+
+background:#8b5cf6;
+
+right:-150px;
+
+bottom:0;
+
+}
+
+.home-grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+background-size:50px 50px;
+
+mask-image:radial-gradient(circle,white,transparent 90%);
+
+}
+
+/* Home Title */
+
 .home-title span{
 background:linear-gradient(
 90deg,

@@ -101,7 +101,8 @@ export default function ProfileCard() {
 
                     <a
                         href={aboutInfo.resume}
-                        className="resume-btn"
+                        // className="resume-btn"
+                        className="btn-primary"
                         download
                     >
                         Download Resume

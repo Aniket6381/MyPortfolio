@@ -18,11 +18,11 @@ export const aboutInfo = {
 
     role: "Full Stack (MERN) Developer",
 
-    experience: "2.8+ Years",
+    experience: "3+ Years",
 
     location: "Maharashtra, India",
 
-    email: "yourmail@gmail.com",
+    email: "anipawar6381@outlook.com",
 
     description: `
 I'm a passionate Full Stack Developer specializing in building modern,
@@ -30,7 +30,7 @@ high-performance web applications using the MERN Stack. I enjoy creating
 beautiful user interfaces, scalable backend architectures, and seamless
 user experiences.
 
-Over the past 2.8+ years, I've worked on enterprise dashboards,
+Over the past 3 years, I've worked on enterprise dashboards,
 healthcare platforms, MIS systems, admin portals, payment integrations,
 and business applications where performance, maintainability and clean
 code were always the top priorities.
@@ -46,7 +46,7 @@ code were always the top priorities.
 
 export const statistics = [
     {
-        number: "2.8+",
+        number: "3+",
         label: "Years Experience",
     },
 
@@ -57,7 +57,7 @@ export const statistics = [
 
     {
         number: "25+",
-        label: "Technologies",
+        label: "Technologies Mastered",
     },
 
     {
@@ -179,7 +179,7 @@ export const socialLinks = [
 
         icon: "github-original",
 
-        url: "https://github.com/yourusername",
+        url: "https://github.com/Aniket6381",
     },
 
     {
@@ -187,6 +187,6 @@ export const socialLinks = [
 
         icon: "linkedin-original",
 
-        url: "https://linkedin.com/in/yourusername",
+        url: "https://linkedin.com/in/aniketpawar6381",
     },
 ];

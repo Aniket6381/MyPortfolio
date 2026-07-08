@@ -135,7 +135,7 @@ function OrbitRing() {
 
 export default function Hero3D() {
     return (
-        <div className="h-[500px] max-h-[500px] w-full">
+        <div className="h-[500px] max-h-[500px] rounded-xl w-full">
             <Canvas
                 camera={{
                     position: [0, 0, 8],
@@ -190,14 +190,14 @@ export default function Hero3D() {
                 />
 
                 <OrbitingSkill
-                    skill="/images/physics.png"
+                    skill="/icons/react-original.svg"
                     radius={2.8}
                     speed={0.5}
                     offset={1}
                 />
 
                 <OrbitingSkill
-                    skill="/images/physics.png"
+                    skill="/icons/nextjs-original.svg"
                     radius={2.8}
                     speed={0.5}
                     offset={2}

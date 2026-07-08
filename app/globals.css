@@ -36,7 +36,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Lato;
+  cursor: none;
 }
 
-
-
+.btn-primary {
+  @apply bg-violet-500 px-5 py-2 rounded-md text-black hover:bg-[#030014] border border-violet-500 outline-0 ring-0 hover:text-white hover:border hover:border-violet-500 hover:ring-0 hover:shadow-md hover:shadow-violet-500 hover:outline-0 transition-all duration-500 font-base
+}

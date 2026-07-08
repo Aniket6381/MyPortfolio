@@ -6,6 +6,7 @@ import "./globals.css";
 // import Preloader from "@/widgets/LandingPage/Preloader";
 import Navbar from "@/components/Navbar/Navbar";
 import ScrollHandler from "@/components/ScrollHandler/ScrollHandler.";
+import RingCursor from "@/widgets/LandingPage/RingCursor";
 
 
 const geistSans = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
 
         {/* <ScrollHandler /> */}
         {/* {!loading && */}
+        <RingCursor />
         <section className="bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-[#1a153a] via-[#08051e] to-[#030014]">
           <Navbar />
           {children}

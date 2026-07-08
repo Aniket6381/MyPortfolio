@@ -25,13 +25,19 @@ export default function Home() {
 
     return (
         <>
-            <RingCursor />
-
             {loading && (
                 <Preloader
                     onFinish={() => setLoading(false)}
                 />
             )}
+
+            {/* Background */}
+
+            <div className="home-background">
+                <div className="home-gradient gradient-left"></div>
+                <div className="home-gradient gradient-right"></div>
+                <div className="home-grid"></div>
+            </div>
 
             {!loading &&
                 <section
@@ -144,8 +150,8 @@ export default function Home() {
                                 </p>
 
                                 <div className="flex items-center justify-start gap-5 mt-6">
-                                    <button className="bg-violet-500 px-5 py-2 rounded-md text-black hover:bg-[#030014] border border-violet-500 outline-0 ring-0 hover:text-white hover:border hover:border-violet-500 hover:ring-none hover:shadow-md hover:shadow-violet-500 hover:outline-none transition-all duration-500 font-base">Download CV</button>
-                                    <button className="bg-[#030014] px-5 py-2 rounded-md text-white hover:bg-[#030020] border border-violet-500 outline-0 ring-0 hover:border hover:border-violet-500 hover:ring-none hover:shadow-md hover:shadow-violet-500 hover:outline-none transition-all duration-500 font-base">Get in Touch &nbsp;&gt;</button>
+                                    <button className="btn-primary">Download CV</button>
+                                    <button className="bg-[#030014] px-5 py-2 rounded-md text-white hover:bg-[#030020] border border-violet-500 outline-0 ring-0 hover:border hover:border-violet-500 hover:ring-0 hover:shadow-md hover:shadow-violet-500 hover:outline-0 transition-all duration-500 font-base">Get in Touch &nbsp;&gt;</button>
                                 </div>
 
                                 {/* <p
