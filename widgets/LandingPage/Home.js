@@ -122,10 +122,7 @@ export default function Home() {
                                     Hi, I'm
                                     <span
                                         className="
-                    bg-gradient-to-r
-                    from-violet-400
-                    via-blue-400
-                    to-cyan-400
+                    bg-[linear-gradient(90deg,_#22d3ee,_#8b5cf6,_#ec4899)]
                     bg-clip-text
                     text-transparent
                     block

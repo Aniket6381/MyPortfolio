@@ -58,8 +58,6 @@ export default function About() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-                    <span className="about-tag">ABOUT ME</span>
-
                     <h2 className="about-title">
                         Passionate About Building
                         <span> Digital Experiences</span>

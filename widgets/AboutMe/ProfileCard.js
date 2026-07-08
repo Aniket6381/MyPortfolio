@@ -114,7 +114,6 @@ export default function ProfileCard() {
                 <div className="social-links">
 
                     {socialLinks.map((item) => {
-                        const Icon = item.icon;
 
                         return (
                             <a
@@ -124,7 +123,12 @@ export default function ProfileCard() {
                                 key={item.name}
                                 className="social-btn"
                             >
-                                <Icon />
+                                <Image
+                                    src={`/icons/${item.icon}.svg`}
+                                    alt={item.name}
+                                    width={32}
+                                    height={32}
+                                />
                             </a>
                         );
                     })}

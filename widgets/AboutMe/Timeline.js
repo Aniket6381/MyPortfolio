@@ -8,8 +8,6 @@ export default function Timeline() {
     return (
         <section className="timeline-section">
             <div className="timeline-header">
-                <span className="timeline-tag">MY JOURNEY</span>
-
                 <h2 className="timeline-title">
                     Experience <span>Timeline</span>
                 </h2>

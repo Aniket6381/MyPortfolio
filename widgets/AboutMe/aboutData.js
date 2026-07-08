@@ -39,7 +39,7 @@ code were always the top priorities.
     philosophy:
         "I believe great software isn't just about writing code—it's about solving real-world problems through clean architecture, intuitive user experiences, and scalable engineering.",
 
-    resume: "/resume.pdf",
+    resume: "/files/Aniket Pawar_Full (MERN) Stack Developer.pdf",
 
     profileImage: "/images/profile.png",
 };
