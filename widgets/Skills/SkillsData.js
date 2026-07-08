@@ -387,19 +387,19 @@ export const skillCategories = [
         skills: [
             {
                 name: "JavaScript",
-                icon: "javascript-plain.svg",
+                icon: "javascript-plain",
             },
             {
                 name: "TypeScript",
-                icon: "typescript-original.svg",
+                icon: "typescript-original",
             },
             {
                 name: "HTML5",
-                icon: "html5-original.svg",
+                icon: "html5-original",
             },
             {
                 name: "CSS3",
-                icon: "css3-original.svg",
+                icon: "css3-original",
             },
         ],
     },
@@ -583,6 +583,10 @@ export const skillCategories = [
             {
                 name: "Figma",
                 icon: "figma-original",
+            },
+
+            {
+                name: "WebSockets",
             },
         ],
     },

@@ -205,9 +205,6 @@ export default function Skills() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-                    <span className="skills-tag">
-                        MY TECH STACK
-                    </span>
 
                     <h2 className="skills-title">
                         Building

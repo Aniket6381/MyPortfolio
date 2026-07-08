@@ -1,9 +1,9 @@
-import AboutMe from "@/widgets/AboutMe/AboutMe";
+import About from "@/widgets/AboutMe/AboutMe";
 
 const Page = () => {
     return (
         <>
-            <AboutMe />
+            <About />
         </>
     )
 }
