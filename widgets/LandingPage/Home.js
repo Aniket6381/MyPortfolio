@@ -114,6 +114,7 @@ export default function Home() {
                             >
                                 <h1
                                     className="
+                                    home-title
                   text-6xl
                   lg:text-7xl
                   font-bold
@@ -123,7 +124,6 @@ export default function Home() {
                                     Hi, I'm
                                     <span
                                         className="
-                    home-title
                     bg-clip-text
                     text-transparent
                     block
