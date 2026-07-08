@@ -9,6 +9,7 @@ import { loadSlim } from "@tsparticles/slim";
 import RingCursor from "@/widgets/LandingPage/RingCursor";
 import Hero3D from "@/widgets/LandingPage/FloatingSphere";
 import Preloader from "./Preloader";
+import "./home.css"
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -122,7 +123,7 @@ export default function Home() {
                                     Hi, I'm
                                     <span
                                         className="
-                    bg-[linear-gradient(90deg,_#22d3ee,_#8b5cf6,_#ec4899)]
+                    home-title
                     bg-clip-text
                     text-transparent
                     block
