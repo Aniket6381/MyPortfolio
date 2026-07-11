@@ -1,21 +1,4 @@
-import {
-    FaReact,
-    FaNodeJs,
-    FaStripe,
-    FaAws,
-    FaGithub,
-} from "react-icons/fa";
 
-import {
-    SiNextdotjs,
-    SiExpress,
-    SiMongodb,
-    SiRedux,
-    SiTailwindcss,
-    SiRazorpay,
-    SiChartdotjs,
-    SiMui,
-} from "react-icons/si";
 
 export const projects = [
     {
@@ -52,31 +35,30 @@ export const projects = [
         technologies: [
             {
                 name: "React",
-                icon: FaReact,
+                icon: "react-original",
             },
             {
                 name: "Redux Toolkit",
-                icon: SiRedux,
+                icon: "redux-original",
             },
             {
                 name: "Tailwind CSS",
-                icon: SiTailwindcss,
+                icon: "tailwindcss-original",
             },
             {
                 name: "Node.js",
-                icon: FaNodeJs,
+                icon: "nodejs-original",
             },
             {
                 name: "Express.js",
-                icon: SiExpress,
+                icon: "express-original",
             },
             {
                 name: "MongoDB",
-                icon: SiMongodb,
+                icon: "mongodb-original",
             },
             {
                 name: "Stripe",
-                icon: FaStripe,
             },
         ],
 
@@ -124,11 +106,11 @@ export const projects = [
         color: "#8b5cf6",
 
         technologies: [
-            { name: "Next.js", icon: SiNextdotjs },
-            { name: "React", icon: FaReact },
-            { name: "Node.js", icon: FaNodeJs },
-            { name: "MongoDB", icon: SiMongodb },
-            { name: "Razorpay", icon: SiRazorpay },
+            { name: "Next.js", icon: "nextjs-original" },
+            { name: "React", icon: "react-original" },
+            { name: "Node.js", icon: "nodejs-original" },
+            { name: "MongoDB", icon: "mongodb-original" },
+            { name: "Razorpay" },
         ],
 
         features: [
@@ -143,192 +125,192 @@ export const projects = [
         ],
     },
 
-    {
-        id: 3,
+    // {
+    //     id: 3,
 
-        featured: false,
+    //     featured: false,
 
-        title: "Lupin Foundation MIS",
+    //     title: "Lupin Foundation MIS",
 
-        slug: "lupin-foundation-mis",
+    //     slug: "lupin-foundation-mis",
 
-        category: "Enterprise MIS",
+    //     category: "Enterprise MIS",
 
-        shortDescription:
-            "Management Information System for monitoring CSR initiatives and reporting.",
+    //     shortDescription:
+    //         "Management Information System for monitoring CSR initiatives and reporting.",
 
-        description:
-            "Built dashboards, analytics, approval workflows, PDF reports, Excel exports, and role-based access for enterprise users.",
+    //     description:
+    //         "Built dashboards, analytics, approval workflows, PDF reports, Excel exports, and role-based access for enterprise users.",
 
-        image: "/projects/lupin.png",
+    //     image: "/projects/lupin.png",
 
-        demo: "",
+    //     demo: "",
 
-        github: "",
+    //     github: "",
 
-        year: "2025",
+    //     year: "2025",
 
-        duration: "6 Months",
+    //     duration: "6 Months",
 
-        role: "Full Stack Developer",
+    //     role: "Full Stack Developer",
 
-        color: "#10b981",
+    //     color: "#10b981",
 
-        technologies: [
-            { name: "React", icon: FaReact },
-            { name: "Node.js", icon: FaNodeJs },
-            { name: "MongoDB", icon: SiMongodb },
-            { name: "Chart.js", icon: SiChartdotjs },
-        ],
+    //     technologies: [
+    //         { name: "React", icon: FaReact },
+    //         { name: "Node.js", icon: FaNodeJs },
+    //         { name: "MongoDB", icon: SiMongodb },
+    //         { name: "Chart.js", icon: SiChartdotjs },
+    //     ],
 
-        features: [
-            "Dashboard",
-            "MIS Reports",
-            "Approval Workflow",
-            "Analytics",
-            "PDF Export",
-            "Excel Export",
-            "Role Management",
-        ],
-    },
+    //     features: [
+    //         "Dashboard",
+    //         "MIS Reports",
+    //         "Approval Workflow",
+    //         "Analytics",
+    //         "PDF Export",
+    //         "Excel Export",
+    //         "Role Management",
+    //     ],
+    // },
 
-    {
-        id: 4,
+    // {
+    //     id: 4,
 
-        featured: false,
+    //     featured: false,
 
-        title: "Kedia Advisory",
+    //     title: "Kedia Advisory",
 
-        slug: "kedia-advisory",
+    //     slug: "kedia-advisory",
 
-        category: "Admin Dashboard",
+    //     category: "Admin Dashboard",
 
-        shortDescription:
-            "Business administration portal with analytics and reporting.",
+    //     shortDescription:
+    //         "Business administration portal with analytics and reporting.",
 
-        description:
-            "Created an admin dashboard for managing users, reports, analytics, and internal business workflows with responsive UI components.",
+    //     description:
+    //         "Created an admin dashboard for managing users, reports, analytics, and internal business workflows with responsive UI components.",
 
-        image: "/projects/kedia.png",
+    //     image: "/projects/kedia.png",
 
-        demo: "",
+    //     demo: "",
 
-        github: "",
+    //     github: "",
 
-        year: "2024",
+    //     year: "2024",
 
-        duration: "4 Months",
+    //     duration: "4 Months",
 
-        role: "Frontend Developer",
+    //     role: "Frontend Developer",
 
-        color: "#f97316",
+    //     color: "#f97316",
 
-        technologies: [
-            { name: "React", icon: FaReact },
-            { name: "Material UI", icon: SiMui },
-            { name: "Node.js", icon: FaNodeJs },
-        ],
+    //     technologies: [
+    //         { name: "React", icon: FaReact },
+    //         { name: "Material UI", icon: SiMui },
+    //         { name: "Node.js", icon: FaNodeJs },
+    //     ],
 
-        features: [
-            "Dashboard",
-            "Analytics",
-            "Charts",
-            "Responsive UI",
-            "Role Management",
-        ],
-    },
+    //     features: [
+    //         "Dashboard",
+    //         "Analytics",
+    //         "Charts",
+    //         "Responsive UI",
+    //         "Role Management",
+    //     ],
+    // },
 
-    {
-        id: 5,
+    // {
+    //     id: 5,
 
-        featured: false,
+    //     featured: false,
 
-        title: "King Ridge Capital",
+    //     title: "King Ridge Capital",
 
-        slug: "king-ridge-capital",
+    //     slug: "king-ridge-capital",
 
-        category: "Corporate Website",
+    //     category: "Corporate Website",
 
-        shortDescription:
-            "A modern investment advisory website with responsive design and optimized performance.",
+    //     shortDescription:
+    //         "A modern investment advisory website with responsive design and optimized performance.",
 
-        description:
-            "Developed a responsive corporate website using Next.js with SEO optimization, reusable UI components, and smooth animations.",
+    //     description:
+    //         "Developed a responsive corporate website using Next.js with SEO optimization, reusable UI components, and smooth animations.",
 
-        image: "/projects/kingridge.png",
+    //     image: "/projects/kingridge.png",
 
-        demo: "",
+    //     demo: "",
 
-        github: "",
+    //     github: "",
 
-        year: "2024",
+    //     year: "2024",
 
-        duration: "2 Months",
+    //     duration: "2 Months",
 
-        role: "Frontend Developer",
+    //     role: "Frontend Developer",
 
-        color: "#3b82f6",
+    //     color: "#3b82f6",
 
-        technologies: [
-            { name: "Next.js", icon: SiNextdotjs },
-            { name: "React", icon: FaReact },
-            { name: "Tailwind CSS", icon: SiTailwindcss },
-        ],
+    //     technologies: [
+    //         { name: "Next.js", icon: SiNextdotjs },
+    //         { name: "React", icon: FaReact },
+    //         { name: "Tailwind CSS", icon: SiTailwindcss },
+    //     ],
 
-        features: [
-            "SEO Optimized",
-            "Responsive",
-            "Reusable Components",
-            "Fast Performance",
-        ],
-    },
+    //     features: [
+    //         "SEO Optimized",
+    //         "Responsive",
+    //         "Reusable Components",
+    //         "Fast Performance",
+    //     ],
+    // },
 
-    {
-        id: 6,
+    // {
+    //     id: 6,
 
-        featured: false,
+    //     featured: false,
 
-        title: "Una Ecosystems",
+    //     title: "Una Ecosystems",
 
-        slug: "una-ecosystems",
+    //     slug: "una-ecosystems",
 
-        category: "Business Platform",
+    //     category: "Business Platform",
 
-        shortDescription:
-            "Business management platform with admin portal and operational dashboards.",
+    //     shortDescription:
+    //         "Business management platform with admin portal and operational dashboards.",
 
-        description:
-            "Designed and developed modules for administration, reporting, dashboards, and business workflow management.",
+    //     description:
+    //         "Designed and developed modules for administration, reporting, dashboards, and business workflow management.",
 
-        image: "/projects/una.png",
+    //     image: "/projects/una.png",
 
-        demo: "",
+    //     demo: "",
 
-        github: "",
+    //     github: "",
 
-        year: "2024",
+    //     year: "2024",
 
-        duration: "5 Months",
+    //     duration: "5 Months",
 
-        role: "Frontend Developer",
+    //     role: "Frontend Developer",
 
-        color: "#ec4899",
+    //     color: "#ec4899",
 
-        technologies: [
-            { name: "React", icon: FaReact },
-            { name: "Node.js", icon: FaNodeJs },
-            { name: "MongoDB", icon: SiMongodb },
-            { name: "AWS", icon: FaAws },
-        ],
+    //     technologies: [
+    //         { name: "React", icon: FaReact },
+    //         { name: "Node.js", icon: FaNodeJs },
+    //         { name: "MongoDB", icon: SiMongodb },
+    //         { name: "AWS", icon: FaAws },
+    //     ],
 
-        features: [
-            "Admin Portal",
-            "Dashboard",
-            "Reports",
-            "Authentication",
-            "Cloud Storage",
-        ],
-    },
+    //     features: [
+    //         "Admin Portal",
+    //         "Dashboard",
+    //         "Reports",
+    //         "Authentication",
+    //         "Cloud Storage",
+    //     ],
+    // },
 ];
 
 export const sectionContent = {

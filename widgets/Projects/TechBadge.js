@@ -1,3 +1,6 @@
+"use client"
+
+import Image from "next/image";
 import "./projects.css";
 
 export default function TechBadge({
@@ -19,7 +22,12 @@ export default function TechBadge({
             <div className="tech-content">
                 {Icon && (
                     <span className="tech-icon">
-                        <Icon />
+                        <Image
+                            src={`/icons/${Icon}.svg`}
+                            alt={Icon}
+                            width={32}
+                            height={32}
+                        />
                     </span>
                 )}
 
