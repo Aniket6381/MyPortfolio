@@ -55,12 +55,9 @@ export default function Projects() {
                         duration: .7,
                     }}
                 >
-                    <span className="projects-tag">
-                        {sectionContent.badge}
-                    </span>
 
                     <h2 className="projects-title">
-                        {sectionContent.title}
+                        {sectionContent.title} <span>Ideas Into Reality</span>
                     </h2>
 
                     <p className="projects-subtitle">

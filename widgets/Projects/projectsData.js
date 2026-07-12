@@ -316,7 +316,7 @@ export const projects = [
 export const sectionContent = {
     badge: "FEATURED WORK",
 
-    title: "Projects That Turn Ideas Into Reality",
+    title: "Projects That Turn",
 
     subtitle:
         "From enterprise dashboards and healthcare platforms to modern e-commerce solutions, these projects demonstrate my experience in building scalable, performant, and user-centric web applications using modern technologies.",
