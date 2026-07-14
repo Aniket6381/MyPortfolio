@@ -1,3 +1,5 @@
+// Old optimized apple like scroll
+
 // "use client"
 
 // import {
@@ -112,85 +114,210 @@
 //     );
 // }
 
+// Newly optimized apple like scroll
 
+// "use client";
+
+// import { useRef, useState, useEffect } from "react";
+// import { motion } from "framer-motion";
+// import { services, sectionContent } from "./servicesData";
+// import ServiceSlide from "./ServiceSlide";
+// import useHorizontalScroll from "./hooks/useHorizontalScroll";
+// import "./services1.css";
+
+// export default function Services() {
+//     const sectionRef = useRef(null);
+//     const trackRef = useRef(null);
+
+//     const [activeSlide, setActiveSlide] = useState(0);
+
+//     useHorizontalScroll(
+//         sectionRef,
+//         trackRef,
+//         services.length
+//     );
+
+//     useEffect(() => {
+//         const handleScroll = () => {
+//             if (!sectionRef.current) return;
+
+//             const rect = sectionRef.current.getBoundingClientRect();
+
+//             const totalWidth =
+//                 window.innerWidth * (services.length - 1);
+
+//             const progress = Math.min(
+//                 Math.max(-rect.top / totalWidth, 0),
+//                 1
+//             );
+
+//             const current = Math.round(
+//                 progress * (services.length - 1)
+//             );
+
+//             setActiveSlide(current);
+//         };
+
+//         window.addEventListener("scroll", handleScroll);
+
+//         handleScroll();
+
+//         return () =>
+//             window.removeEventListener("scroll", handleScroll);
+//     }, []);
+
+//     return (
+//         <section
+//             ref={sectionRef}
+//             id="services"
+//             className="services-section"
+//         >
+//             {/* ==========================
+//           Animated Background
+//       ========================== */}
+
+//             <motion.div
+//                 className="services-bg"
+//                 animate={{
+//                     background: `radial-gradient(circle at center,
+//           ${services[activeSlide].gradient[0]}20 0%,
+//           transparent 70%)`,
+//                 }}
+//                 transition={{
+//                     duration: 0.8,
+//                 }}
+//             />
+
+//             <div className="grid-overlay" />
+
+//             {/* ==========================
+//             Heading
+//       ========================== */}
+
+//             <motion.div
+//                 className="services-header"
+//                 initial={{
+//                     opacity: 0,
+//                     y: 40,
+//                 }}
+//                 whileInView={{
+//                     opacity: 1,
+//                     y: 0,
+//                 }}
+//                 viewport={{
+//                     once: true,
+//                 }}
+//             >
+//                 <span className="services-tag">
+//                     {sectionContent.badge}
+//                 </span>
+
+//                 <h2>
+//                     {sectionContent.title}
+//                 </h2>
+
+//                 <p>
+//                     {sectionContent.subtitle}
+//                 </p>
+//             </motion.div>
+
+//             {/* ==========================
+//           Progress
+//       ========================== */}
+
+//             <div className="services-progress">
+
+//                 {services.map((service, index) => (
+
+//                     <div
+//                         key={service.id}
+//                         className={`progress-item ${activeSlide === index
+//                             ? "active"
+//                             : ""
+//                             }`}
+//                     >
+//                         <span>
+//                             {service.number}
+//                         </span>
+
+//                         <div className="progress-dot" />
+
+//                     </div>
+
+//                 ))}
+
+//             </div>
+
+//             {/* ==========================
+//           Horizontal Track
+//       ========================== */}
+
+//             <div className="services-wrapper">
+
+//                 <div
+//                     ref={trackRef}
+//                     className="services-track"
+//                 >
+//                     {services.map((service, index) => (
+//                         <ServiceSlide
+//                             key={service.id}
+//                             service={service}
+//                             index={index}
+//                             active={activeSlide === index}
+//                         />
+//                     ))}
+//                 </div>
+
+//             </div>
+//         </section>
+//     );
+// }
+
+
+// New Simple card like scroll
 
 "use client";
 
-import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import ServiceCard from "./ServiceCard";
 import { services, sectionContent } from "./servicesData";
-import ServiceSlide from "./ServiceSlide";
-import useHorizontalScroll from "./hooks/useHorizontalScroll";
-import "./services1.css";
+
+import "./services.css";
+
+const containerVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.12,
+        },
+    },
+};
 
 export default function Services() {
-    const sectionRef = useRef(null);
-    const trackRef = useRef(null);
-
-    const [activeSlide, setActiveSlide] = useState(0);
-
-    useHorizontalScroll(
-        sectionRef,
-        trackRef,
-        services.length
-    );
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!sectionRef.current) return;
-
-            const rect = sectionRef.current.getBoundingClientRect();
-
-            const totalWidth =
-                window.innerWidth * (services.length - 1);
-
-            const progress = Math.min(
-                Math.max(-rect.top / totalWidth, 0),
-                1
-            );
-
-            const current = Math.round(
-                progress * (services.length - 1)
-            );
-
-            setActiveSlide(current);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        handleScroll();
-
-        return () =>
-            window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
         <section
-            ref={sectionRef}
             id="services"
             className="services-section"
         >
-            {/* ==========================
-          Animated Background
-      ========================== */}
+            {/* ===========================
+          Background
+      ============================ */}
 
-            <motion.div
-                className="services-bg"
-                animate={{
-                    background: `radial-gradient(circle at center,
-          ${services[activeSlide].gradient[0]}20 0%,
-          transparent 70%)`,
-                }}
-                transition={{
-                    duration: 0.8,
-                }}
-            />
+            <div className="services-background">
 
-            <div className="grid-overlay" />
+                <div className="blob blob-one" />
 
-            {/* ==========================
-            Heading
-      ========================== */}
+                <div className="blob blob-two" />
+
+                <div className="blob blob-three" />
+
+                <div className="grid-overlay" />
+
+            </div>
+
+            {/* ===========================
+            Header
+      ============================ */}
 
             <motion.div
                 className="services-header"
@@ -205,68 +332,89 @@ export default function Services() {
                 viewport={{
                     once: true,
                 }}
+                transition={{
+                    duration: .7,
+                }}
             >
-                <span className="services-tag">
+                <span className="section-badge">
                     {sectionContent.badge}
                 </span>
 
-                <h2>
+                <h2 className="section-title">
                     {sectionContent.title}
                 </h2>
 
-                <p>
+                <p className="section-subtitle">
                     {sectionContent.subtitle}
                 </p>
             </motion.div>
 
-            {/* ==========================
-          Progress
-      ========================== */}
+            {/* ===========================
+              Cards
+      ============================ */}
 
-            <div className="services-progress">
-
+            <motion.div
+                className="services-grid"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                    once: true,
+                    amount: .2,
+                }}
+            >
                 {services.map((service, index) => (
-
-                    <div
+                    <ServiceCard
                         key={service.id}
-                        className={`progress-item ${activeSlide === index
-                            ? "active"
-                            : ""
-                            }`}
-                    >
-                        <span>
-                            {service.number}
-                        </span>
-
-                        <div className="progress-dot" />
-
-                    </div>
-
+                        service={service}
+                        index={index}
+                    />
                 ))}
+            </motion.div>
 
-            </div>
+            {/* ===========================
+              CTA
+      ============================ */}
 
-            {/* ==========================
-          Horizontal Track
-      ========================== */}
+            <motion.div
+                className="services-cta"
+                initial={{
+                    opacity: 0,
+                    y: 40,
+                }}
+                whileInView={{
+                    opacity: 1,
+                    y: 0,
+                }}
+                transition={{
+                    duration: .8,
+                }}
+                viewport={{
+                    once: true,
+                }}
+            >
+                <h3>
+                    Ready to build your next project?
+                </h3>
 
-            <div className="services-wrapper">
+                <p>
+                    Let's transform your ideas into scalable,
+                    high-performance web applications.
+                </p>
 
-                <div
-                    ref={trackRef}
-                    className="services-track"
+                <motion.a
+                    href="#contact"
+                    whileHover={{
+                        scale: 1.05,
+                    }}
+                    whileTap={{
+                        scale: .96,
+                    }}
+                    className="services-button"
                 >
-                    {services.map((service, index) => (
-                        <ServiceSlide
-                            key={service.id}
-                            service={service}
-                            index={index}
-                            active={activeSlide === index}
-                        />
-                    ))}
-                </div>
-
-            </div>
+                    Let's Talk
+                </motion.a>
+            </motion.div>
         </section>
     );
 }
