@@ -143,6 +143,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import "./services1.css";
+import Image from "next/image";
 
 export default function FloatingIllustration({
     accent = "#22d3ee",
@@ -264,9 +265,16 @@ export default function FloatingIllustration({
                             }}
                             className="tech-card"
                         >
-                            <Icon
+                            {/* <Icon
                                 size={32}
                                 color={accent}
+                            /> */}
+
+                            <Image
+                                src={`/icons/${Icon}.svg`}
+                                alt={tech.name}
+                                width={32}
+                                height={32}
                             />
                         </motion.div>
                     </motion.div>

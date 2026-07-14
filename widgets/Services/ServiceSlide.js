@@ -170,6 +170,7 @@ import {
 } from "react-icons/fi";
 
 import FloatingIllustration from "./FloatingIllustration";
+import Image from "next/image";
 
 const container = {
     hidden: {},
@@ -257,8 +258,15 @@ export default function ServiceSlide({
                                 }}
                                 className="tech-pill"
                             >
-                                <Icon
+                                {/* <Icon
                                     color={service.color}
+                                /> */}
+
+                                <Image
+                                    src={`/icons/${Icon}.svg`}
+                                    alt={tech.name}
+                                    width={32}
+                                    height={32}
                                 />
 
                                 <span>{tech.name}</span>
