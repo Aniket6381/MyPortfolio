@@ -46,7 +46,7 @@ export const services = [
             },
         ],
 
-        bullets: [
+        features: [
             "Responsive UI",
             "Animations",
             "Reusable Components",
@@ -97,7 +97,7 @@ export const services = [
             },
         ],
 
-        bullets: [
+        features: [
             "Authentication",
             "Authorization",
             "REST APIs",
@@ -145,7 +145,7 @@ export const services = [
             },
         ],
 
-        bullets: [
+        features: [
             "Enterprise Apps",
             "Healthcare",
             "E-Commerce",
@@ -189,7 +189,7 @@ export const services = [
             },
         ],
 
-        bullets: [
+        features: [
             "SEO",
             "Lazy Loading",
             "Code Splitting",
@@ -241,7 +241,7 @@ export const services = [
             },
         ],
 
-        bullets: [
+        features: [
             "AWS Deployment",
             "Docker",
             "CI/CD",

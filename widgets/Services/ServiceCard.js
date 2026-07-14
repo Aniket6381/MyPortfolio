@@ -20,6 +20,8 @@ const cardVariants = {
 };
 
 export default function ServiceCard({ service, index }) {
+
+    console.log("services", service)
     const rotateX = useMotionValue(0);
     const rotateY = useMotionValue(0);
 
@@ -44,7 +46,7 @@ export default function ServiceCard({ service, index }) {
         rotateY.set(0);
     };
 
-    const Icon = service.icon;
+    // const Icon = service.icon;
 
     return (
         <motion.article
@@ -91,7 +93,7 @@ export default function ServiceCard({ service, index }) {
 
             {/* Icon */}
 
-            <motion.div
+            {/* <motion.div
                 whileHover={{
                     rotate: 360,
                     scale: 1.15,
@@ -109,7 +111,7 @@ export default function ServiceCard({ service, index }) {
                 }}
             >
                 <Icon />
-            </motion.div>
+            </motion.div> */}
 
             {/* Title */}
 
