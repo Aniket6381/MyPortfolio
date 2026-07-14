@@ -282,7 +282,7 @@ import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
 import { services, sectionContent } from "./servicesData";
 
-import "./services.css";
+import "./services2.css";
 
 const containerVariants = {
     hidden: {},
