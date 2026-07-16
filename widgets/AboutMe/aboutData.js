@@ -41,7 +41,7 @@ code were always the top priorities.
 
     resume: "/files/Aniket Pawar_Full (MERN) Stack Developer.pdf",
 
-    profileImage: "/images/profile.png",
+    profileImage: "/images/avatar.webp",
 };
 
 export const statistics = [

@@ -46,5 +46,9 @@ body {
 }
 
 .btn-primary {
-  @apply bg-violet-500 px-5 py-2 rounded-md text-black hover:bg-[#030014] border border-violet-500 outline-0 ring-0 hover:text-white hover:border hover:border-violet-500 hover:ring-0 hover:shadow-md hover:shadow-violet-500 hover:outline-0 transition-all duration-500
+  @apply inline-flex items-center justify-center px-[34px] py-[15px] rounded-full bg-gradient-to-br from-[#06b6d4] to-[#8b5cf6] text-white font-semibold no-underline transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_45px_rgba(6,182,212,0.35)]
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-[34px] py-[15px] rounded-full bg-gradient-to-br from-[#000] to-[#8b5cf6] text-white font-semibold no-underline transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_45px_rgba(6,182,212,0.35)]
 }

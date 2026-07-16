@@ -6,19 +6,19 @@ export const projects = [
 
         featured: true,
 
-        title: "Maruhi Jewellery",
+        title: "Burger Mania",
 
-        slug: "maruhi-jewellery",
+        slug: "burger-mania",
 
         category: "Full Stack E-Commerce",
 
         shortDescription:
-            "A premium jewellery e-commerce platform with secure authentication, Stripe payments, wishlist, product management, and an admin dashboard.",
+            "A premium burger delivery e-commerce platform with secure authentication, Stripe payments, wishlist, product management, and an admin dashboard.",
 
         description:
             "Built a production-ready MERN e-commerce application with secure authentication, Stripe payment integration, wishlist functionality, order management, product filtering, and a modern responsive UI. Designed reusable components and optimized API performance for a seamless shopping experience.",
 
-        image: "/projects/maruhi.png",
+        image: "/images/burger-mania.png",
 
         demo: "https://your-demo-link.com",
 
@@ -79,27 +79,27 @@ export const projects = [
 
         featured: false,
 
-        title: "ShaAvi Polyclinic",
+        title: "VidFlix",
 
-        slug: "shaavi-polyclinic",
+        slug: "vidFlix",
 
-        category: "Healthcare Management",
+        category: "Video Streaming Platform",
 
         shortDescription:
-            "A complete healthcare management platform for hospitals and clinics.",
+            "A complete video streaming platform for those who crave for movies and shows.",
 
         description:
-            "Developed a comprehensive hospital management application featuring appointment scheduling, doctor management, patient records, inventory, billing, Razorpay payment integration, revenue sharing, and settlement reports.",
+            "Developing a comprehensive video streaming application like Netflix featuring multillingual movies, tv shows and web series.",
 
-        image: "/projects/shaavi.png",
+        image: "/images/coming-soon.png",
 
         demo: "",
 
         github: "",
 
-        year: "2025",
+        year: "2026",
 
-        duration: "8 Months",
+        duration: "2 Months",
 
         role: "Full Stack Developer",
 
@@ -114,14 +114,11 @@ export const projects = [
         ],
 
         features: [
-            "Doctor Management",
-            "Patient Management",
-            "Appointments",
+            "Personalized Profiles",
+            "Multillingual Movies and TV Shows",
+            "Web Series streaming across many platforms",
             "Billing",
-            "Inventory",
-            "Revenue Sharing",
-            "Settlement Reports",
-            "Role-Based Access",
+            "OTT Content",
         ],
     },
 
@@ -312,12 +309,3 @@ export const projects = [
     //     ],
     // },
 ];
-
-export const sectionContent = {
-    badge: "FEATURED WORK",
-
-    title: "Projects That Turn",
-
-    subtitle:
-        "From enterprise dashboards and healthcare platforms to modern e-commerce solutions, these projects demonstrate my experience in building scalable, performant, and user-centric web applications using modern technologies.",
-};

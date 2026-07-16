@@ -14,6 +14,19 @@ import * as THREE from "three";
 // import { Aws } from "@dev.icons/react";
 // import reactLogo from "/images/physics.png"
 
+const skillIcons = [
+    "/images/javascript-plain.png",
+    "/images/typescript-original.png",
+    "/images/react-original.png",
+    "/images/nextjs-original.png",
+    "/images/nodejs-original.png",
+    "/images/express-original.png",
+    "/images/mongodb-original.png",
+    "/images/git-original.png",
+    "/images/docker-original.png",
+    "/images/amazonwebservices-original-wordmark.png",
+];
+
 function CameraRig() {
     useFrame(({ mouse, camera }) => {
         camera.position.x = THREE.MathUtils.lerp(
@@ -106,6 +119,7 @@ function OrbitingSkill({
                     <Image
                         url={skill}
                         scale={[0.8, 0.8]}
+                        transparent
                     />
                 </Billboard>
             </Float>
@@ -182,29 +196,39 @@ export default function Hero3D() {
 
                 <EnergyCore />
 
-                <OrbitingSkill
-                    skill="/images/physics.png"
+                {skillIcons.map((skill, index) => (
+                    <OrbitingSkill
+                        key={skill}
+                        skill={skill}
+                        radius={2.8}
+                        speed={0.5}
+                        offset={(index / skillIcons.length) * Math.PI * 2}
+                    />
+                ))}
+
+                {/* <OrbitingSkill
+                    skill="/images/javascript-plain.png"
                     radius={2.8}
                     speed={0.5}
                     offset={0}
                 />
 
                 <OrbitingSkill
-                    skill="/icons/react-original.svg"
+                    skill="/images/typescript-original.png"
                     radius={2.8}
                     speed={0.5}
                     offset={1}
                 />
 
                 <OrbitingSkill
-                    skill="/icons/nextjs-original.svg"
+                    skill="/images/react-original.png"
                     radius={2.8}
                     speed={0.5}
                     offset={2}
                 />
 
                 <OrbitingSkill
-                    skill="/images/physics.png"
+                    skill="/images/nextjs-original.png"
                     radius={2.8}
                     speed={0.5}
                     offset={3}
@@ -212,18 +236,46 @@ export default function Hero3D() {
 
                 <OrbitingSkill
                     // skill={Aws}
-                    skill="/images/physics.png"
+                    skill="/images/nodejs-original.png"
                     radius={2.8}
                     speed={0.5}
                     offset={4}
                 />
 
                 <OrbitingSkill
-                    skill="/images/physics.png"
+                    skill="/images/express-original.png"
                     radius={2.8}
                     speed={0.5}
                     offset={5}
                 />
+
+                <OrbitingSkill
+                    skill="/images/mongodb-original.png"
+                    radius={2.8}
+                    speed={0.5}
+                    offset={6}
+                />
+
+                <OrbitingSkill
+                    skill="/images/git-original.png"
+                    radius={2.8}
+                    speed={0.5}
+                    offset={7}
+                />
+
+                <OrbitingSkill
+                    skill="/images/docker-original.png"
+                    radius={2.8}
+                    speed={0.5}
+                    offset={8}
+                />
+
+                <OrbitingSkill
+                    skill="/images/amazonwebservices-original-wordmark.png"
+                    radius={2.8}
+                    speed={0.5}
+                    offset={9}
+                /> */}
             </Canvas>
         </div>
     );

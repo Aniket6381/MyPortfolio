@@ -336,16 +336,13 @@ export default function Services() {
                     duration: .7,
                 }}
             >
-                <span className="section-badge">
-                    {sectionContent.badge}
-                </span>
 
                 <h2 className="section-title">
-                    {sectionContent.title}
+                    Building Digital Products <span>That Scale</span>
                 </h2>
 
                 <p className="section-subtitle">
-                    {sectionContent.subtitle}
+                    From beautiful user interfaces to scalable backend architectures, I help businesses transform ideas into high-quality digital products using modern technologies.
                 </p>
             </motion.div>
 
@@ -403,7 +400,7 @@ export default function Services() {
                 </p>
 
                 <motion.a
-                    href="#contact"
+                    href="mailto:anipawar6381@outlook.com"
                     whileHover={{
                         scale: 1.05,
                     }}

@@ -57,11 +57,11 @@ export default function Projects() {
                 >
 
                     <h2 className="projects-title">
-                        {sectionContent.title} <span>Ideas Into Reality</span>
+                        Projects That Turn Ideas <span>Into Reality</span>
                     </h2>
 
                     <p className="projects-subtitle">
-                        {sectionContent.subtitle}
+                        From enterprise dashboards and healthcare platforms to modern e-commerce solutions, these projects demonstrate my experience in building scalable, performant, and user-centric web applications using modern technologies.
                     </p>
                 </motion.div>
 

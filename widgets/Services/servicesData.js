@@ -251,12 +251,3 @@ export const services = [
         ],
     },
 ];
-
-export const sectionContent = {
-    badge: "WHAT I DO",
-
-    title: "Building Digital Products That Scale",
-
-    subtitle:
-        "From beautiful user interfaces to scalable backend architectures, I help businesses transform ideas into high-quality digital products using modern technologies.",
-};
