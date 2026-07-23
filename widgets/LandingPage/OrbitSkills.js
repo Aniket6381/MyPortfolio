@@ -1,5 +1,6 @@
 "use client"
 
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import "./orbit.css";
 
 const outerSkills = ["AWS", "Docker", "Git", "Linux"];
@@ -58,8 +59,24 @@ function OrbitLayer({
 }
 
 export default function OrbitSkills() {
+    const isMobile = useMediaQuery("(max-width:640px)");
+    const isTablet = useMediaQuery("(max-width:768px)");
+
+    const size =
+        isMobile
+            ? 280
+            : isTablet
+                ? 400
+                : 600;
     return (
-        <div className="relative w-[600px] h-[600px]">
+        <div className="relative w-[280px]
+h-[280px]
+sm:w-[400px]
+sm:h-[400px]
+md:w-[500px]
+md:h-[500px]
+lg:w-[600px]
+lg:h-[600px]">
 
             {/* OUTER GLOW RING */}
 
@@ -89,20 +106,20 @@ export default function OrbitSkills() {
 
             <OrbitLayer
                 skills={outerSkills}
-                radius={260}
+                radius={size * 0.43}
                 duration={35}
             />
 
             <OrbitLayer
                 skills={middleSkills}
-                radius={180}
+                radius={size * 0.30}
                 duration={25}
                 reverse
             />
 
             <OrbitLayer
                 skills={innerSkills}
-                radius={100}
+                radius={size * 0.17}
                 duration={15}
             />
 

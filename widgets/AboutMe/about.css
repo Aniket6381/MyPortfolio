@@ -320,6 +320,10 @@ transform:translateY(-5px);
 
 @media(max-width:768px){
 
+.profile-card{
+    max-width:360px;
+}
+
 .profile-content{
 
 padding:25px;
@@ -328,9 +332,8 @@ padding:25px;
 
 .profile-image-wrapper{
 
-width:170px;
-
-height:170px;
+width:clamp(150px,32vw,220px);
+height:clamp(150px,32vw,220px);
 
 }
 
@@ -948,15 +951,10 @@ line-height:1.9;
 /* Layout */
 
 .about-layout{
-
-display:grid;
-
-grid-template-columns:430px 1fr;
-
-gap:70px;
-
-align-items:start;
-
+    display:grid;
+    grid-template-columns:minmax(320px,420px) 1fr;
+    gap:clamp(2rem,5vw,5rem);
+    align-items:center;
 }
 
 /* Content */

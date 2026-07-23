@@ -58,7 +58,7 @@ export default function Preloader({ onFinish }) {
         overflow-hidden
       "
         >
-            <div className="absolute left-[37%] flex items-center gap-4">
+            <div className="absolute left-1/2 -translate-x-24 flex items-center gap-4">
                 <span
                     className="
       h-3
@@ -89,8 +89,10 @@ export default function Preloader({ onFinish }) {
                     }}
                     className="
             text-white
-            text-5xl
-            md:text-7xl
+           text-4xl
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
             font-bold
             tracking-tight
           "

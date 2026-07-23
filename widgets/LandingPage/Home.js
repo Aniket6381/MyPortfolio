@@ -11,6 +11,7 @@ import Hero3D from "@/widgets/LandingPage/FloatingSphere";
 import Preloader from "./Preloader";
 import "./home.css"
 import { useRouter } from "next/navigation";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -22,6 +23,16 @@ export default function Home() {
         },
         []
     );
+
+    const isMobile = useMediaQuery("(max-width:640px)");
+    const isDesktop = useMediaQuery("(max-width:1024px)");
+
+    const particleCount =
+        isMobile
+            ? 35
+            : isDesktop
+                ? 60
+                : 90;
 
     // bg - [#030014]
 
@@ -44,13 +55,16 @@ export default function Home() {
             {!loading &&
                 <section
                     className="
-          relative
-          min-h-screen
-          overflow-hidden
-          flex
-          items-center
-          mx-10
-        "
+    relative
+    min-h-screen
+    overflow-hidden
+    flex
+    items-center
+    px-5
+    sm:px-8
+    lg:px-16
+    xl:px-20
+"
                 >
                     {/* Particles */}
 
@@ -62,7 +76,7 @@ export default function Home() {
 
                             particles: {
                                 number: {
-                                    value: 80,
+                                    value: particleCount,
                                 },
 
                                 size: {
@@ -103,8 +117,10 @@ export default function Home() {
                         <div
                             className="
               grid
+              grid-cols-1
               lg:grid-cols-2
-              gap-16
+              gap-10
+              lg:gap-16
               items-center
             "
                         >
@@ -119,12 +135,21 @@ export default function Home() {
                                     opacity: 1,
                                     y: 0,
                                 }}
+                                className="
+text-center
+lg:text-left
+order-2
+lg:order-1
+"
                             >
                                 <h1
                                     className="
                                     home-title
-                  text-6xl
-                  lg:text-7xl
+                 text-4xl
+sm:text-5xl
+md:text-6xl
+xl:text-7xl
+leading-tight
                   font-bold
                   text-white
                 "
@@ -141,17 +166,21 @@ export default function Home() {
                                     </span>
                                 </h1>
 
-                                <p
-                                    className="
-                  mt-6
-                  text-xl
-                  text-gray-400
-                "
-                                >
-                                    Full Stack Developer with a passion to build <br /> scalable and user-friendly web applications
+                                <p className="mt-6 text-gray-400 text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0">
+                                    Full Stack Developer with a passion to build scalable and user-friendly web applications.
                                 </p>
 
-                                <div className="flex items-center justify-start gap-5 mt-6">
+                                <div
+                                    className="
+flex
+flex-col
+sm:flex-row
+gap-4
+mt-8
+justify-center
+lg:justify-start
+"
+                                >
                                     <a href="/files/Aniket Pawar_Full (MERN) Stack Developer.pdf" download><button className="btn-primary">Download CV</button></a>
                                     <a href="mailto:anipawar6381@outlook.com"><button className="btn-secondary">Get in Touch &nbsp;&gt;</button></a>
                                 </div>
@@ -180,6 +209,7 @@ export default function Home() {
                                     opacity: 1,
                                     scale: 1,
                                 }}
+                                className="order-1 mt-12 lg:order-2 lg:mt-0 rounded-lg"
                             >
                                 {/* <OrbitSkills /> */}
                                 <Hero3D />

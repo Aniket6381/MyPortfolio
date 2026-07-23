@@ -35,6 +35,8 @@ export default function RingCursor() {
                 damping: 30,
             }}
             className="
+            hidden
+lg:block
         fixed
         top-0
         left-0

@@ -25,8 +25,9 @@ export default function TechBadge({
                         <Image
                             src={`/icons/${Icon}.svg`}
                             alt={Icon}
-                            width={32}
-                            height={32}
+                            width={28}
+                            height={28}
+                            className="tech-icon-image"
                         />
                     </span>
                 )}

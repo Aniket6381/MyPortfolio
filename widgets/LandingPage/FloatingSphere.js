@@ -11,6 +11,7 @@ import {
 } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 // import { Aws } from "@dev.icons/react";
 // import reactLogo from "/images/physics.png"
 
@@ -50,6 +51,10 @@ function CameraRig() {
 function EnergyCore() {
     const ref = useRef();
 
+    const isMobile = useMediaQuery("(max-width:640px)");
+
+    const radius = isMobile ? 0.9 : 1.3;
+
     useFrame((state) => {
         const t = state.clock.elapsedTime;
 
@@ -67,7 +72,7 @@ function EnergyCore() {
             floatIntensity={2}
         >
             <mesh ref={ref}>
-                <icosahedronGeometry args={[1.3, 2]} />
+                <icosahedronGeometry args={[radius, 2]} />
 
                 <meshStandardMaterial
                     color="#8b5cf6"
@@ -87,6 +92,16 @@ function OrbitingSkill({
     offset
 }) {
     const group = useRef();
+
+    const isMobile = useMediaQuery("(max-width:640px)");
+    const isDesktop = useMediaQuery("(max-width:1024px)");
+
+    const scale =
+        isMobile
+            ? 0.45
+            : isDesktop
+                ? 0.65
+                : 0.8;
 
     useFrame((state) => {
         const t =
@@ -118,7 +133,7 @@ function OrbitingSkill({
                 <Billboard>
                     <Image
                         url={skill}
-                        scale={[0.8, 0.8]}
+                        scale={[scale, scale]}
                         transparent
                     />
                 </Billboard>
@@ -130,6 +145,13 @@ function OrbitingSkill({
 function OrbitRing() {
     const ref = useRef();
 
+    const isMobile = useMediaQuery("(max-width:640px)");
+
+    const orbitRadius =
+        isMobile
+            ? 2
+            : 2.8;
+
     useFrame(() => {
         ref.current.rotation.y += 0.002;
     });
@@ -137,7 +159,7 @@ function OrbitRing() {
     return (
         <mesh ref={ref}>
             <torusGeometry
-                args={[2.8, 0.015, 16, 200]}
+                args={[orbitRadius, 0.015, 16, 200]}
             />
 
             <meshBasicMaterial
@@ -148,15 +170,34 @@ function OrbitRing() {
 }
 
 export default function Hero3D() {
+    const isMobile = useMediaQuery("(max-width:640px)");
+    const isTablet = useMediaQuery("(max-width:768px)");
+    const isDesktop = useMediaQuery("(max-width:1024px)");
+
+    const orbitRadius =
+        isMobile
+            ? 2
+            : isDesktop
+                ? 2.4
+                : 2.8;
+
     return (
-        <div className="h-[500px] max-h-[500px] rounded-xl w-full">
+        <div
+            className="
+w-full
+h-[280px]
+sm:h-[350px]
+md:h-[420px]
+lg:h-[500px]
+"
+        >
             <Canvas
                 camera={{
-                    position: [0, 0, 8],
-                    fov: 45,
+                    position: [0, 0, isMobile ? 10 : 8],
+                    fov: isMobile ? 55 : 45
                 }}
             >
-                <CameraRig />
+                {!isTablet && <CameraRig />}
 
                 <color
                     attach="background"
@@ -200,7 +241,7 @@ export default function Hero3D() {
                     <OrbitingSkill
                         key={skill}
                         skill={skill}
-                        radius={2.8}
+                        radius={orbitRadius}
                         speed={0.5}
                         offset={(index / skillIcons.length) * Math.PI * 2}
                     />
