@@ -1002,15 +1002,22 @@ Responsive
 
 .projects-layout{
 
-display:grid;
-
-grid-template-columns:minmax(280px,330px) 1fr;
-
-gap:clamp(2rem,4vw,4rem);
-
-align-items:start;
+display:flex;
+flex-direction:column;
+gap:40px;
 
 }
+
+.project-sidebar{
+
+position:relative;
+top:auto;
+max-width:100%;
+width:100%;
+margin-bottom:20px;
+
+}
+
 
 }
 
