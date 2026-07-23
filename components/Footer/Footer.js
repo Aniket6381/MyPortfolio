@@ -94,8 +94,6 @@ export default function Footer() {
             className="
         relative
         w-full
-        border-t
-        border-white/10
         bg-transparent
         py-6
         px-5
@@ -146,7 +144,7 @@ export default function Footer() {
           "
                 >
                     🕒 {localTime}
-                    <span className="hidden sm:inline">
+                    <span className="inline">
                         {" "}
                         • 🌍 {localTimeZone}
                     </span>
