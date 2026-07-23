@@ -58,7 +58,7 @@ export default function Preloader({ onFinish }) {
         overflow-hidden
       "
         >
-            <div className="absolute left-1/2 -translate-x-40 flex items-center gap-4">
+            <div className="absolute left-1/2 translate-x-32 lg:-translate-x-40 flex items-center gap-4">
                 <span
                     className="
       h-3
