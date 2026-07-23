@@ -108,7 +108,7 @@ export default function Navbar() {
                         href="/"
                         className="text-2xl font-bold tracking-wide text-white"
                     >
-                        Aniket
+                        Aniket.
                     </Link>
 
                     {/* Desktop */}
