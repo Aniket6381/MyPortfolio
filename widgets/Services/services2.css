@@ -127,6 +127,17 @@ color:white;
 
 }
 
+.section-title span {
+
+  background:linear-gradient(
+90deg,
+#22d3ee,
+#8b5cf6,
+#ec4899
+);
+
+}
+
 .section-subtitle{
 
 margin-top:28px;
@@ -261,7 +272,7 @@ box-shadow:
 TITLE
 ========================================================== */
 
-.services-title {
+/* .services-title {
 
 margin-top:28px;
 
@@ -288,7 +299,7 @@ color:white;
 
 -webkit-text-fill-color:transparent;
 
-}
+} */
 
 .service-description{
 
@@ -523,6 +534,17 @@ grid-template-columns:1fr;
 .section-title{
 
 font-size:2.5rem;
+
+}
+
+.section-title span {
+
+  background:linear-gradient(
+90deg,
+#22d3ee,
+#8b5cf6,
+#ec4899
+);
 
 }
 
